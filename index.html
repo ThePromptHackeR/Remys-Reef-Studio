@@ -9,41 +9,103 @@
       content="Remy's Reef Studio provides reef aquarium setup, maintenance, and care for San Antonio saltwater aquarium hobbyists."
     />
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#061017" />
+
+    <!-- TODO: replace remysreefstudio.com with the client's real domain before launch -->
+    <link rel="canonical" href="https://remysreefstudio.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Remy's Reef Studio" />
+    <meta property="og:title" content="Remy's Reef Studio | San Antonio Reef Aquarium Experts" />
+    <meta
+      property="og:description"
+      content="Reef aquarium setup, maintenance, and care for San Antonio saltwater aquarium hobbyists."
+    />
+    <!-- TODO: replace og:image with a branded photo of a real client tank (1200x630) -->
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1200&h=630&q=80"
+    />
+    <meta property="og:url" content="https://remysreefstudio.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap"
+    />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- TODO: telephone + email below are placeholders; swap in real NAP data from the client -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Remy's Reef Studio",
+        "description": "Reef aquarium setup, maintenance, and care for San Antonio saltwater aquarium hobbyists.",
+        "url": "https://remysreefstudio.com/",
+        "telephone": "+1-210-555-0123",
+        "email": "hello@remysreefstudio.com",
+        "foundingDate": "2023",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Antonio",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 29.4241, "longitude": -98.4936 },
+        "areaServed": { "@type": "City", "name": "San Antonio" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Reef aquarium services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "New reef and saltwater aquarium setups" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aquarium maintenance and water testing" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reef aquarium care and troubleshooting" } }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Remy's Reef Studio home">
-        <span class="brand-mark">R</span>
+        <img class="brand-logo" src="assets/logo.png" alt="" width="44" height="44" />
         <span>
           <strong>Remy's Reef Studio</strong>
           <small>San Antonio reef specialists</small>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" data-nav>
+      <nav class="site-nav" id="site-nav" data-nav>
         <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#proof">Why Remy</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Remy's Reef Studio introduction">
-        <img
-          class="hero-bg"
-          src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=2200&q=82"
-          alt="Colorful reef aquarium coral and fish"
-        />
         <div class="hero-overlay"></div>
         <div class="hero-content">
+          <img
+            class="hero-badge"
+            src="assets/logo.png"
+            alt="Remy's Reef Studio badge featuring Remy in front of a reef aquarium"
+            width="573"
+            height="573"
+          />
           <p class="eyebrow">Est. 2023 | San Antonio, Texas</p>
           <h1>Remy's Reef Studio</h1>
           <p class="hero-copy">
@@ -92,23 +154,28 @@
         <div class="service-grid">
           <article class="service-card">
             <img
-              src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=900&q=78"
-              alt="Saltwater aquarium with coral"
+              src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=900&h=750&q=78"
+              alt="Saltwater aquarium with colorful coral"
+              width="900"
+              height="750"
+              loading="lazy"
+              decoding="async"
             />
             <div>
               <div class="service-title">
                 <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true">
-                  <rect x="10" y="7" width="44" height="13" rx="1.5"></rect>
-                  <rect x="10" y="25" width="44" height="15" rx="1.5"></rect>
-                  <rect x="10" y="45" width="44" height="13" rx="1.5"></rect>
-                  <path d="M14 20v5M50 20v5M14 40v5M50 40v5"></path>
-                  <path d="M15 33h7m17 0h8"></path>
-                  <path d="M25 33c3-4 7-4 10 0-3 4-7 4-10 0Z"></path>
-                  <circle cx="29" cy="15" r="1.2"></circle>
-                  <circle cx="36" cy="14" r="1.2"></circle>
-                  <circle cx="42" cy="16" r="1.2"></circle>
-                  <path d="M21 45v13M32 45v13M43 45v13"></path>
-                  <path d="M16 51h7M29 52h4M40 51h8"></path>
+                  <rect x="8" y="5" width="48" height="16" rx="1"></rect>
+                  <path d="M17 14c2-2.4 5-2.4 7 0-2 2.4-5 2.4-7 0Z"></path>
+                  <path d="M24 14l3.4-2.4v4.8Z"></path>
+                  <path d="M40 12c1.6-2 4.2-2 5.8 0-1.6 2-4.2 2-5.8 0Z"></path>
+                  <rect x="8" y="25" width="48" height="16" rx="1"></rect>
+                  <path d="M36 34c-2 2.4-5 2.4-7 0 2-2.4 5-2.4 7 0Z"></path>
+                  <path d="M29 34l-3.4-2.4v4.8Z"></path>
+                  <path d="M47 38c0-3 1.6-4 1.6-7M50.5 38c0-2 1.2-3 1.2-5"></path>
+                  <rect x="8" y="45" width="48" height="14" rx="1"></rect>
+                  <path d="M32 45v14"></path>
+                  <circle cx="27" cy="52" r="1.3"></circle>
+                  <circle cx="37" cy="52" r="1.3"></circle>
                 </svg>
                 <h3>New Setups</h3>
               </div>
@@ -118,15 +185,22 @@
 
           <article class="service-card">
             <img
-              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=900&q=78"
-              alt="Reef fish swimming over coral"
+              src="https://images.unsplash.com/photo-1522720833375-9c27ffb02a5e?auto=format&fit=crop&w=900&h=750&q=78"
+              alt="Blue and yellow angelfish in a healthy saltwater aquarium"
+              width="900"
+              height="750"
+              loading="lazy"
+              decoding="async"
             />
             <div>
               <div class="service-title">
                 <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true">
-                  <path d="M43 7a15 15 0 0 0-18 18L8 42a7 7 0 0 0 10 10l17-17A15 15 0 0 0 53 17l-9 9-8-8Z"></path>
-                  <path d="M13 47l4 4"></path>
-                  <path d="M27 29l8 8"></path>
+                  <g transform="rotate(14 32 32)">
+                    <path
+                      d="M26.5 25.5C22.5 23.6 20 20 20 15.8 20 9.3 25.3 4 31.8 4c1.7 0 3.3.35 4.8 1l-8.3 7.2 6.3 6.3 8.4-7.1c.7 1.5 1 3.1 1 4.4 0 4.2-2.5 7.8-6.5 9.7v20.3a7.5 7.5 0 1 1-10.9 0V25.5Z"
+                    ></path>
+                    <circle cx="32" cy="51.5" r="2.6"></circle>
+                  </g>
                 </svg>
                 <h3>Maintenance</h3>
               </div>
@@ -136,28 +210,36 @@
 
           <article class="service-card">
             <img
-              src="https://images.unsplash.com/photo-1580752300969-1ceaaa1f3039?auto=format&fit=crop&w=900&q=78"
-              alt="Close view of reef coral"
+              src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?auto=format&fit=crop&w=900&h=750&q=78"
+              alt="Clownfish sheltering in an anemone"
+              width="900"
+              height="750"
+              loading="lazy"
+              decoding="async"
             />
             <div>
               <div class="service-title">
                 <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true">
-                  <path d="M31 56V14"></path>
-                  <path d="M31 28c-5-2-8-6-8-11 4 0 8 4 8 9"></path>
-                  <path d="M31 35c7-2 11-7 12-14-6 0-12 5-12 12"></path>
-                  <path d="M31 43c-8-2-14-8-15-17 7 0 15 7 15 15"></path>
-                  <path d="M31 48c8-1 15-7 17-17-8 0-16 7-17 15"></path>
-                  <path d="M24 38c-5 0-9-3-10-8"></path>
-                  <path d="M39 41c5 0 9-4 10-9"></path>
-                  <path d="M25 25c-4-2-6-6-6-10"></path>
-                  <path d="M40 29c4-2 7-6 7-11"></path>
-                  <circle cx="31" cy="13" r="2.5"></circle>
-                  <circle cx="23" cy="17" r="2"></circle>
-                  <circle cx="43" cy="21" r="2"></circle>
-                  <circle cx="16" cy="27" r="2"></circle>
+                  <path d="M32 52V18"></path>
+                  <path d="M32 46c-8-1-13-6-14-13"></path>
+                  <path d="M32 46c8-1 13-6 14-13"></path>
+                  <path d="M32 36c-6-1.5-10-5.5-11-11"></path>
+                  <path d="M32 36c6-1.5 10-5.5 11-11"></path>
+                  <path d="M32 26c-4-1.5-6.5-4.5-7-9"></path>
+                  <path d="M32 26c4-1.5 6.5-4.5 7-9"></path>
+                  <path d="M25 31c-2.5-.5-4-2-4.5-4.5"></path>
+                  <path d="M39 31c2.5-.5 4-2 4.5-4.5"></path>
+                  <circle cx="32" cy="15" r="2.2"></circle>
+                  <circle cx="25" cy="15" r="2"></circle>
+                  <circle cx="39" cy="15" r="2"></circle>
+                  <circle cx="19.5" cy="23" r="2"></circle>
+                  <circle cx="44.5" cy="23" r="2"></circle>
+                  <circle cx="16" cy="31" r="2"></circle>
                   <circle cx="48" cy="31" r="2"></circle>
-                  <path d="M20 57h24"></path>
-                  <path d="M24 52h16"></path>
+                  <path d="M18 56c0-3 6-5 14-5s14 2 14 5"></path>
+                  <path d="M14 58h36"></path>
+                  <circle cx="20" cy="57.5" r="1"></circle>
+                  <circle cx="45" cy="57.5" r="1"></circle>
                 </svg>
                 <h3>Aquarium Care</h3>
               </div>
@@ -198,9 +280,146 @@
         </div>
       </section>
 
+      <section class="section-inner gallery" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Recent work</p>
+          <h2>Real tanks. Real results.</h2>
+          <p class="section-note">A few of the aquariums we care for around San Antonio.</p>
+        </div>
+
+        <!-- TODO: placeholder stock photos + invented captions — replace with Remy's real client tanks -->
+        <div class="gallery-grid">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=700&h=560&q=75"
+              alt="Mixed reef aquarium full of colorful soft corals"
+              width="700"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>90-gallon mixed reef &middot; Stone Oak</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?auto=format&fit=crop&w=700&h=560&q=75"
+              alt="Clownfish swimming above coral in a reef tank"
+              width="700"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Clownfish pair &amp; soft corals &middot; Alamo Heights</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?auto=format&fit=crop&w=700&h=560&q=75"
+              alt="Yellow tang in a saltwater aquarium"
+              width="700"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>120-gallon FOWLR build &middot; Boerne</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=700&h=560&q=75"
+              alt="Reef corals with a school of small orange fish"
+              width="700"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>220-gallon SPS display &middot; Downtown</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1524704796725-9fc3044a58b2?auto=format&fit=crop&w=700&h=560&q=75"
+              alt="Purple tang swimming in blue aquarium water"
+              width="700"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Nano reef refresh &middot; Helotes</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1520301255226-bf5f144451c1?auto=format&fit=crop&w=700&h=560&q=75"
+              alt="Goldfish in a planted freshwater aquarium"
+              width="700"
+              height="560"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Custom freshwater display &middot; New Braunfels</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="pricing-band" id="pricing">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Maintenance plans</p>
+            <h2>Care that fits your tank.</h2>
+            <p class="section-note">
+              Every tank is different &mdash; exact pricing is confirmed after a quick consult.
+            </p>
+          </div>
+
+          <!-- TODO: placeholder pricing — confirm real plan names, prices, and inclusions with the client -->
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Essential</h3>
+              <p class="price"><strong>$99</strong><span>/visit &middot; monthly</span></p>
+              <ul>
+                <li>Water testing with logged results</li>
+                <li>Glass, sand &amp; algae cleaning</li>
+                <li>Filter &amp; equipment check</li>
+                <li>Top-off &amp; dosing review</li>
+              </ul>
+              <a class="button button-secondary" href="#contact">Start with a consult</a>
+            </article>
+
+            <article class="price-card is-featured">
+              <span class="plan-badge">Most popular</span>
+              <h3>Signature</h3>
+              <p class="price"><strong>$149</strong><span>/visit &middot; biweekly</span></p>
+              <ul>
+                <li>Everything in Essential</li>
+                <li>Water change included</li>
+                <li>Coral placement &amp; pest checks</li>
+                <li>Priority scheduling</li>
+              </ul>
+              <a class="button button-primary" href="#contact">Start with a consult</a>
+            </article>
+
+            <article class="price-card">
+              <h3>Concierge</h3>
+              <p class="price"><strong>Custom</strong><span>weekly care</span></p>
+              <ul>
+                <li>Everything in Signature</li>
+                <li>Livestock sourcing &amp; quarantine</li>
+                <li>Emergency response</li>
+                <li>Vacation coverage</li>
+              </ul>
+              <a class="button button-secondary" href="#contact">Start with a consult</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section-inner proof" id="proof">
         <div class="proof-map" aria-label="San Antonio local service area">
-          <div class="texas-outline">TX</div>
+          <svg class="texas-svg" viewBox="-4 -4 113 108" role="img" aria-label="Outline of Texas with San Antonio marked">
+            <path
+              class="texas-path"
+              d="M28.9 0 L53.2 0 L53.2 18.2 L59.6 19.7 L68.4 23.6 L76 25.9 L82 25.7 L91.6 24.4 L100.9 27.7 L100.9 42.3 L102.8 46.1 L104.8 51.7 L103.4 58.3 L102.4 63.9 L94 67.2 L85.2 72.9 L76.8 79.9 L74.4 86.5 L75.6 93.1 L76 99.2 L70.4 98.2 L63.6 95.9 L60.4 90.2 L57.6 83.7 L53.2 78 L48 69.6 L42.8 63.5 L34.4 62.5 L30.4 67.2 L26 70.5 L20 65.3 L14 57.8 L8.4 50.8 L1.2 44.7 L0.4 43.2 L28.7 43.2 Z"
+            ></path>
+            <circle class="sa-ring" cx="65.3" cy="66.6" r="6"></circle>
+            <circle class="sa-dot" cx="65.3" cy="66.6" r="3"></circle>
+          </svg>
           <span>San Antonio</span>
         </div>
         <div class="proof-copy">
@@ -210,10 +429,119 @@
             Reef tanks reward consistency. Remy's Reef Studio brings honest advice, responsive service, and the kind of
             hands-on experience that comes from years inside the hobby.
           </p>
-          <div class="rating" aria-label="Five star trusted by hobbyists">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-            <strong>Trusted by local reefkeepers</strong>
+        </div>
+
+        <!-- TODO: placeholder testimonials — replace with real reviews (names + permission) before launch -->
+        <div class="testimonial-row">
+          <figure class="testimonial">
+            <div class="t-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>
+              Remy rescued a tank I was ready to give up on. Nitrates down and corals coloring up again within six
+              weeks.
+            </blockquote>
+            <figcaption>Sarah M. &middot; Stone Oak</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <div class="t-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>
+              He explains everything as he works, so I finally understand my own reef instead of guessing.
+            </blockquote>
+            <figcaption>David R. &middot; Alamo Heights</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <div class="t-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>
+              Reliable, honest, and the tank has never looked better. Worth every penny.
+            </blockquote>
+            <figcaption>Monica T. &middot; Helotes</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="about-band" id="about">
+        <div class="section-inner about-grid">
+          <div class="photo-placeholder" role="img" aria-label="Placeholder for a photo of Remy">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 7h3l2-2h6l2 2h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              ></path>
+              <circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+            </svg>
+            <span>Remy's photo goes here</span>
           </div>
+          <div>
+            <p class="eyebrow">Meet Remy</p>
+            <h2>Faith. Family. Legacy. Reefkeeping.</h2>
+            <!-- TODO: placeholder bio — replace with Remy's real story -->
+            <p>
+              Remy has kept reef aquariums for more than twenty years &mdash; long before Remy's Reef Studio opened
+              its doors in 2023. What started as a lifelong fascination with saltwater life became a simple mission:
+              help San Antonio hobbyists enjoy their tanks instead of fighting them.
+            </p>
+            <p>
+              Every visit comes with honest advice and a patient explanation of the why, not just the what. Serving
+              our community, one tank at a time.
+            </p>
+            <!-- Memorial tribute confirmed by the client — keep. -->
+            <p class="dedication">In loving memory of Marlin Kent Shaw, 1961&ndash;2025.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-inner faq" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">Good to know</p>
+          <h2>Reef questions, answered.</h2>
+        </div>
+
+        <!-- TODO: placeholder answers — confirm service area, freshwater policy, and pricing ranges with the client -->
+        <div class="faq-list">
+          <details>
+            <summary>How much does aquarium maintenance cost?</summary>
+            <p>
+              Most maintenance plans land between $99 and $250 per visit depending on tank size, livestock, and how
+              much help you want. After a quick consult you get an exact quote &mdash; no surprises.
+            </p>
+          </details>
+          <details>
+            <summary>What areas do you serve?</summary>
+            <p>
+              Remy's Reef Studio is based in San Antonio and serves the surrounding area, including Stone Oak, Alamo
+              Heights, Helotes, Boerne, and New Braunfels.
+            </p>
+          </details>
+          <details>
+            <summary>How often should my reef tank be serviced?</summary>
+            <p>
+              Most reef tanks do best with biweekly care. Heavily stocked or SPS-dominant systems often benefit from
+              weekly visits, while simple fish-only setups can run well on a monthly schedule.
+            </p>
+          </details>
+          <details>
+            <summary>What happens during a maintenance visit?</summary>
+            <p>
+              Water testing with logged results, glass and algae cleaning, water changes, filter and equipment
+              checks, and a look at every animal in the tank &mdash; plus clear notes on anything worth watching.
+            </p>
+          </details>
+          <details>
+            <summary>Do you work on freshwater aquariums?</summary>
+            <p>
+              Saltwater and reef systems are the specialty, but freshwater displays are taken on case by case. Reach
+              out with the details and we'll be straight with you about whether it's a fit.
+            </p>
+          </details>
+          <details>
+            <summary>My tank is in trouble right now &mdash; can you help?</summary>
+            <p>
+              Call directly for emergencies. If livestock is at risk, Remy will talk you through first steps on the
+              phone and get eyes on the tank as soon as possible.
+            </p>
+          </details>
         </div>
       </section>
 
@@ -233,6 +561,7 @@
           </div>
 
           <form class="contact-form" data-contact-form>
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <label>
               Name
               <input name="name" autocomplete="name" required />
@@ -263,8 +592,62 @@
     </main>
 
     <footer class="site-footer">
-      <p>Remy's Reef Studio | San Antonio's local reef experts</p>
-      <p>Faith. Family. Legacy. Reefkeeping.</p>
+      <div class="section-inner footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="" width="64" height="64" loading="lazy" />
+          <p>
+            <strong>Remy's Reef Studio</strong>
+            San Antonio's local reef experts
+          </p>
+          <p class="footer-motto">Faith. Family. Legacy. Reefkeeping.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer">
+          <strong>Explore</strong>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-col">
+          <strong>Get in touch</strong>
+          <a href="tel:+12105550123">(210) 555-0123</a>
+          <a href="mailto:hello@remysreefstudio.com">hello@remysreefstudio.com</a>
+          <!-- TODO: replace # with the client's real Facebook and Instagram URLs -->
+          <div class="footer-social">
+            <a href="#" aria-label="Remy's Reef Studio on Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.6-.1-1.4-.2-2.3-.2-2.3 0-3.8 1.4-3.8 3.9V11H8v3h2.3v7h3.2Z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Remy's Reef Studio on Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                <circle cx="17.2" cy="6.8" r="1.4"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <strong>Service area</strong>
+          <p>
+            San Antonio &middot; Stone Oak &middot; Alamo Heights &middot; Helotes &middot; Boerne &middot; New
+            Braunfels
+          </p>
+        </div>
+      </div>
+
+      <div class="section-inner footer-bottom">
+        <p>&copy; <span data-year>2026</span> Remy's Reef Studio. All rights reserved.</p>
+        <p>Est. 2023 &middot; San Antonio, Texas</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
